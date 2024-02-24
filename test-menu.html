@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa-solid fa-car"></i>MultiCom
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="dashboard"><a href="#"><i class="fa-solid fa-dashboard"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-file-invoice"></i>Factures</a></li>
+                <li><a href="#"><i class="fa-solid fa-sort"></i>Forfaits</a></li>
+                <li><a href="#"><i class="fa-solid fa-warning"></i>Abonnements</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>Clients</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i>Localisations</a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i>Utilisateurs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <header>
+            <div class="gauche">
+                <i class="fa-solid fa-bars hamburger"></i>
+                <h3>Dashboard</h3>
+            </div>
+            <div class="droite">
+                <div class="search">
+                    <i class="fa-solid fa-search loupe"></i>
+                    <input type="search" placeholder="Rechercher..." name="search" id="search">
+                </div>
+                <div class="profil">
+                    <div class="visible">
+                        <div class="photo">
+                            <img src="kw.png" alt="" class="pp">
+                        </div>
+                        <div class="txt">
+                            <h4>William</h4>
+                            <p>Admin</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="masquer">
+                        <a href="#"><i class="fa-solid fa-cog"></i><span>Paramètres</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-power-off"></i><span>Déconnexion</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-page">
+            <div class="cartes-chiffres">
+                <h3>Vos chiffres</h3>
+                <div class="cartes">
+                    <div class="carte">
+                        <h5>Clients</h5>
+                        <div class="chiffre">
+                            <span>#1500</span>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <h5>Forfaits</h5>
+                        <div class="chiffre">
+                            <span>#10</span>
+                            <i class="fa-solid fa-sort"></i>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <h5>Abonnements</h5>
+                        <div class="chiffre">
+                            <span>#500</span>
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <h5>Zones</h5>
+                        <div class="chiffre">
+                            <span>#1500</span>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                    </div>
+                    <div class="carte">
+                        <h5>Factures</h5>
+                        <div class="chiffre">
+                            <span>#2389</span>
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistiques">
+                <div class="dettes"></div>
+                <div class="dettes"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
