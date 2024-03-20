@@ -3,7 +3,8 @@ const iconHamburger = document.querySelector(".hamburger"),
     searchZone = document.querySelector(".search"),
     visible = document.querySelector(".visible"),
     elementMasquer = document.querySelector(".masquer"),
-    loupe = document.querySelector(".loupe")
+    loupe = document.querySelector(".loupe"),
+    chevron = document.querySelector(".chevron")
 
 iconHamburger.addEventListener("click", () => {
     navBar.classList.toggle("navBar")
@@ -13,6 +14,7 @@ loupe.addEventListener("click", () => {
     searchZone.classList.toggle("searchZone")
 })
 visible.addEventListener("click", () => {
+    chevron.classList.toggle("rotate")
     showHide(elementMasquer)
 })
 
@@ -24,8 +26,8 @@ function showHide(element) {
     }
 }
 
-if (confirm("quitter ?")) {
-    location.href = "/core/pages/Admin/index.php"
-}
+// if (confirm("quitter ?")) {
+//     location.href = "/core/pages/Admin/index.php"
+// }
 
 // console.log(masquer)

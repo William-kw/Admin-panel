@@ -8,7 +8,7 @@
     outline: none;
     list-style: none;
     box-sizing: border-box;
-    transition: all 0.8s ease-out;
+    transition: all 0.7s ease-out;
 }
 
 body {
@@ -18,6 +18,11 @@ body {
 
 h3 {
     color: #084080;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 0.5s;
 }
 
 i {
@@ -129,12 +134,6 @@ section header .droite .search {
     display: flex;
     width: 45px;
     align-items: center;
-
-    @keyframes animeSearchBar {
-        from {
-            transform: translateX(-10px);
-        }
-    }
 }
 
 section header .droite .search i {
@@ -144,6 +143,12 @@ section header .droite .search i {
 section header .droite .searchZone {
     animation: animeSearchBar .8s ease-out;
     width: 224px;
+
+    @keyframes animeSearchBar {
+        from {
+            transform: translateX(-10px);
+        }
+    }
 }
 
 section header .droite .search input[type="search"] {
